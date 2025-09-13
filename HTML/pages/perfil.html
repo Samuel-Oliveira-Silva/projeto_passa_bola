@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Passa a Bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { purple: '#8A2BE2', 'purple-hover': '#7b24cb' },
+                        dark: { 100: '#EAEAEA', 500: '#3a3a3a', 600: '#2c2c2c', 700: '#1f1f1f', 800: '#1c1c1c', 900: '#121212' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-dark-100">
+    <main class="flex flex-col items-center justify-center min-h-screen p-4">
+        <div class="text-center mb-8">
+            <a href="index.html" class="flex items-center justify-center gap-3">
+                <img src="/HTML/images/logo.png" alt="Logo Passa a Bola" class="w-8 h-8">
+                <h1 class="text-2xl font-semibold">Passa a Bola</h1>
+            </a>
+        </div>
+
+        <div class="w-full max-w-md bg-dark-800 rounded-2xl shadow-lg p-8">
+            <div class="flex flex-col items-center">
+                <div class="w-24 h-24 rounded-full bg-dark-700 flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w.org/2000/svg" class="h-12 w-12 text-gray-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
+                </div>
+                <div class="flex items-center gap-2">
+                    <h2 class="text-xl font-bold">Olá, Fulana</h2>
+                    <span class="bg-blue-500 rounded-full p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="my-6 border-b border-dark-600">
+                <nav class="flex justify-center -mb-px">
+                    <a href="#" class="py-4 px-6 border-b-2 border-brand-purple font-medium">Informações</a>
+                    <a href="#" class="py-4 px-6 text-gray-400 hover:text-white">Doações</a>
+                </nav>
+            </div>
+
+            <div class="space-y-4 text-sm">
+                <div class="flex justify-between">
+                    <span class="text-gray-400">Email:</span>
+                    <span class="font-medium">fulana.silva@example.com</span>
+                </div>
+                 <div class="flex justify-between">
+                    <span class="text-gray-400">Membro desde:</span>
+                    <span class="font-medium">Janeiro de 2024</span>
+                </div>
+                 <div class="flex justify-between">
+                    <span class="text-gray-400">Telefone:</span>
+                    <span class="font-medium">(11) 91234-5678</span>
+                </div>
+                 <div class="flex justify-between">
+                    <span class="text-gray-400">Endereço:</span>
+                    <span class="font-medium">Rua das Flores, 123</span>
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-col gap-4">
+                <button class="w-full py-3 bg-brand-purple text-white font-semibold rounded-lg hover:bg-brand-purple-hover transition-colors">Editar Perfil</button>
+                <button class="w-full py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors">Deletar Conta</button>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
