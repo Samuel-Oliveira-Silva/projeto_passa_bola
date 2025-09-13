@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Time - Copa Passa a Bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#6D28D9'
+                        },
+                        dark: {
+                            100: '#EAEAEA',
+                            300: '#B2B2B2',
+                            600: '#2c2c2c',
+                            700: '#1f1f1f',
+                            800: '#1c1c1c',
+                            900: '#121212'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-dark-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <a href="copa.html"
+            class="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-8 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>Copa Passa a Bola</span>
+        </a>
+        <div class="flex flex-col lg:flex-row gap-10">
+            <aside class="w-full lg:w-1/4">
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="w-24 h-24 bg-dark-800 rounded-lg flex items-center justify-center mb-4">
+                        <img src="/HTML/images/vitoria.png"
+                            alt="Logo FC Vitoria Regia" class="p-2">
+                    </div>
+                    <h2 class="text-2xl font-bold">Team Phoenix</h2>
+                    <p class="text-sm text-gray-400">Grupo B</p>
+                    <p class="text-xs text-gray-500">Fundado em 2018</p>
+                </div>
+                <div class="mt-8">
+                    <h3 class="font-semibold mb-4">Próximas partidas</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-sm">
+                            <div class="p-2 bg-dark-800 rounded-md">⚽</div>
+                            <div>
+                                <p class="font-medium">Julho 15, 2025</p>
+                                <p class="text-xs text-gray-400">vs. FC
+                                    Guerreiras da Bola</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <div class="p-2 bg-dark-800 rounded-md">⚽</div>
+                            <div>
+                                <p class="font-medium">Julho 22, 2025</p>
+                                <p class="text-xs text-gray-400">vs. FC Uniao
+                                    das Forcas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <div class="p-2 bg-dark-800 rounded-md">⚽</div>
+                            <div>
+                                <p class="font-medium">Julho 29, 2025</p>
+                                <p class="text-xs text-gray-400">vs. FC
+                                    Esperanca Viva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main class="flex-1">
+                <h1 class="text-4xl font-bold mb-8">FC Vitoria Regia</h1>
+                <section class="mb-12">
+                    <h2 class="text-xl font-semibold mb-4">Lista de Jogadoras
+                    </h2>
+                    <div class="bg-dark-800 rounded-lg overflow-hidden">
+                        <div
+                            class="grid grid-cols-3 text-sm font-semibold text-gray-400 p-4 border-b border-dark-600">
+                            <div>Jogadoras</div>
+                            <div>Posição</div>
+                            <div class="text-right">Número</div>
+                        </div>
+                        <div class="text-sm">
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Elena Ramirez</div>
+                                <div>Atacante</div>
+                                <div class="text-right">9</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Sofia Zhang</div>
+                                <div>Meio Campo</div>
+                                <div class="text-right">10</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Isabella Rossi</div>
+                                <div>Zagueira</div>
+                                <div class="text-right">3</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Ava Carter</div>
+                                <div>Goleira</div>
+                                <div class="text-right">1</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Emily Silva</div>
+                                <div>Atacante</div>
+                                <div class="text-right">7</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Chloe Park</div>
+                                <div>Meio Campo</div>
+                                <div class="text-right">8</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Mia Dubois</div>
+                                <div>Zagueira</div>
+                                <div class="text-right">2</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Madison Clark</div>
+                                <div>Atacante</div>
+                                <div class="text-right">11</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Abigail Gonzalez</div>
+                                <div>Meio Campo</div>
+                                <div class="text-right">6</div>
+                            </div>
+                            <div
+                                class="grid grid-cols-3 items-center p-4 border-t border-dark-700/50">
+                                <div>Ella Bennett</div>
+                                <div>Defensora</div>
+                                <div class="text-right">4</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold mb-4">Locais de Partida
+                    </h2>
+                    <div class="rounded-lg overflow-hidden">
+                        <img src="/HTML/images/mapa.png"
+                            alt="Mapa com locais de partida"
+                            class="w-full h-auto">
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="bg-dark-800 mt-16 border-t border-dark-700">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div
+                class="flex flex-col sm:flex-row justify-between items-center gap-6">
+                <div class="text-center sm:text-left"><a
+                        class="flex items-center justify-center sm:justify-start gap-3"><img
+                            src="/HTML/images/logo.png" alt="Logo Passa a Bola"
+                            class="w-8 h-8"><span
+                            class="text-xl font-bold">Passa a Bola</span></a>
+                </div>
+                <div class="text-center text-sm text-gray-500">
+                    <p>&copy; 2025 Passa a Bola. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

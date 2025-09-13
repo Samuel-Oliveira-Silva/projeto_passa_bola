@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidas - Copa Passa a Bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#6D28D9'
+                        },
+                        dark: {
+                            100: '#EAEAEA',
+                            600: '#2c2c2c',
+                            700: '#1f1f1f',
+                            800: '#1c1c1c',
+                            900: '#121212'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-dark-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <a href="times.html"
+            class="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-8 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>Voltar para Times</span>
+        </a>
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold">Partidas</h1>
+            <p class="text-gray-400">Resultados do Campeonato</p>
+        </header>
+        <div class="flex gap-4 mb-8">
+            <button class="bg-dark-800 p-2 px-4 rounded-lg text-sm">Grupo
+                ⌄</button>
+            <button class="bg-dark-800 p-2 px-4 rounded-lg text-sm">Time
+                ⌄</button>
+        </div>
+        <div class="space-y-8">
+            <div>
+                <h2 class="font-semibold text-lg mb-4">Hoje</h2>
+                <div class="bg-dark-800 rounded-lg p-4 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-dark-600 rounded-md">⏰</div>
+                            <div>
+                                <p>Time A vs Time B</p>
+                                <p class="text-xs text-gray-400">10:00 AM</p>
+                            </div>
+                        </div>
+                        <p class="font-bold">2-1</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-dark-600 rounded-md">⏰</div>
+                            <div>
+                                <p>Time C vs Time D</p>
+                                <p class="text-xs text-gray-400">01:00 PM</p>
+                            </div>
+                        </div>
+                        <p class="font-bold">1-0</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="font-semibold text-lg mb-4">Amanhã</h2>
+                <div class="bg-dark-800 rounded-lg p-4 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="p-2 bg-green-500/20 text-green-400 rounded-md">
+                                🏟️</div>
+                            <div>
+                                <p>Time E vs Time F</p>
+                                <p class="text-xs text-gray-400">02:00 PM</p>
+                            </div>
+                        </div>
+                        <p class="font-bold">0-0</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="p-2 bg-green-500/20 text-green-400 rounded-md">
+                                🏟️</div>
+                            <div>
+                                <p>Time G vs Time H</p>
+                                <p class="text-xs text-gray-400">03:00 PM</p>
+                            </div>
+                        </div>
+                        <p class="font-bold">3-2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

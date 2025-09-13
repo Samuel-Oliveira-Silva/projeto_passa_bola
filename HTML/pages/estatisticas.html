@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas - Copa Passa a Bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#6D28D9'
+                        },
+                        dark: {
+                            100: '#EAEAEA',
+                            600: '#2c2c2c',
+                            700: '#1f1f1f',
+                            800: '#1c1c1c',
+                            900: '#121212'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-dark-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <a href="times.html"
+            class="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-8 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>Voltar para Times</span>
+        </a>
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold">Estatísticas</h1>
+            <p class="text-gray-400">Artilharia até 13 de Setembro, 2025</p>
+        </header>
+        <div class="bg-dark-800 rounded-lg overflow-hidden">
+            <div
+                class="grid grid-cols-6 text-sm font-semibold text-gray-400 p-4">
+                <div class="col-span-3">Jogadora</div>
+                <div class="col-span-2">Time</div>
+                <div class="text-right">Gols</div>
+            </div>
+            <div class="text-sm font-medium">
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Sofia Prado</div>
+                    <div class="col-span-2 text-gray-300">FC Sol Nascente</div>
+                    <div class="text-right font-bold text-lg">12</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Isabela Costa</div>
+                    <div class="col-span-2 text-gray-300">FC Fenix</div>
+                    <div class="text-right font-bold text-lg">10</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Olivia Chen</div>
+                    <div class="col-span-2 text-gray-300">FC Novo Horizonte
+                    </div>
+                    <div class="text-right font-bold text-lg">9</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Ana Garcia</div>
+                    <div class="col-span-2 text-gray-300">FC Estrela Cadente
+                    </div>
+                    <div class="text-right font-bold text-lg">8</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Chloe Kim</div>
+                    <div class="col-span-2 text-gray-300">FC Vitoria Regia</div>
+                    <div class="text-right font-bold text-lg">7</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Mia Rodrigues</div>
+                    <div class="col-span-2 text-gray-300">FC Guerreiras da Bola
+                    </div>
+                    <div class="text-right font-bold text-lg">6</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Amelia Lee</div>
+                    <div class="col-span-2 text-gray-300">FC Guerreiras da Bola
+                    </div>
+                    <div class="text-right font-bold text-lg">5</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Harper Jones</div>
+                    <div class="col-span-2 text-gray-300">FC Uniao das Forcas
+                    </div>
+                    <div class="text-right font-bold text-lg">4</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Evelyn Garcia</div>
+                    <div class="col-span-2 text-gray-300">FC Esperanca Viva
+                    </div>
+                    <div class="text-right font-bold text-lg">3</div>
+                </div>
+                <div
+                    class="grid grid-cols-6 items-center p-4 border-t border-dark-700/50">
+                    <div class="col-span-3">Abigail Brown</div>
+                    <div class="col-span-2 text-gray-300">FC Fenix</div>
+                    <div class="text-right font-bold text-lg">2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
