@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário - Passa a Bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#6D28D9',
+                            'purple-light': '#8B5CF6'
+                        },
+                        dark: {
+                            'bg': '#121212',
+                            'card': '#1c1c1c',
+                            'border': '#2c2c2c',
+                            'text-primary': '#ffffff',
+                            'text-secondary': '#a0a0a0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-dark-text-primary">
+    <header class="bg-dark-bg border-b border-dark-border">
+        <nav
+            class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="/HTML/index.html" class="text-2xl font-bold">Passa a Bola</a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="peneiras.html"
+                    class="text-dark-text-secondary hover:text-white transition-colors">Peneiras</a>
+                <a href="calendario.html" class="text-white">Calendário</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="bg-dark-card rounded-xl shadow-lg">
+            <div
+                class="flex items-center justify-between p-4 border-b border-dark-border">
+                <div class="flex items-center gap-4">
+                    <button
+                        class="p-2 rounded-md hover:bg-dark-border transition-colors"
+                        aria-label="Mês anterior">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <h2 class="text-xl font-semibold text-white">Setembro 2025
+                    </h2>
+                    <button
+                        class="p-2 rounded-md hover:bg-dark-border transition-colors"
+                        aria-label="Próximo mês">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <button
+                    class="border border-dark-border text-sm font-semibold py-2 px-4 rounded-lg hover:bg-dark-border transition-colors">Hoje</button>
+            </div>
+            <div class="hidden lg:block">
+                <div
+                    class="grid grid-cols-7 text-center text-xs text-dark-text-secondary font-semibold border-b border-dark-border">
+                    <div class="py-3">DOM</div>
+                    <div class="py-3">SEG</div>
+                    <div class="py-3">TER</div>
+                    <div class="py-3">QUA</div>
+                    <div class="py-3">QUI</div>
+                    <div class="py-3">SEX</div>
+                    <div class="py-3">SAB</div>
+                </div>
+                <div class="grid grid-cols-7 h-[600px]">
+                    <div
+                        class="border-r border-b border-dark-border p-2 text-dark-text-secondary opacity-50">
+                        31</div>
+                    <div class="border-r border-b border-dark-border p-2">1
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">2
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">3 <div
+                            class="bg-blue-500 text-white text-xs p-1 rounded-md mt-1 truncate">
+                            Peneira Aberta</div>
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">4
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">5
+                    </div>
+                    <div class="border-b border-dark-border p-2">6</div>
+                    <div class="border-r border-b border-dark-border p-2">7
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">8
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">9
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">10
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">11
+                    </div>
+                    <div
+                        class="border-r border-b border-dark-border p-2 bg-brand-purple/10 border-l-4 border-brand-purple">
+                        12 <div
+                            class="bg-brand-purple text-white text-xs p-1 rounded-md mt-1 truncate">
+                            Avaliação Sub-20</div>
+                    </div>
+                    <div class="border-b border-dark-border p-2">13</div>
+                    <div
+                        class="border-r border-b border-dark-border p-2 font-bold text-brand-purple-light">
+                        14</div>
+                    <div class="border-r border-b border-dark-border p-2">15
+                        <div
+                            class="bg-green-500 text-white text-xs p-1 rounded-md mt-1 truncate">
+                            Final do Campeonato</div>
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">16
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">17
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">18
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">19
+                    </div>
+                    <div class="border-b border-dark-border p-2">20</div>
+                    <div class="border-r border-b border-dark-border p-2">21
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">22
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">23
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">24
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">25
+                    </div>
+                    <div class="border-r border-b border-dark-border p-2">26
+                    </div>
+                    <div class="border-b border-dark-border p-2">27</div>
+                    <div class="border-r border-dark-border p-2">28</div>
+                    <div class="border-r border-dark-border p-2">29</div>
+                    <div class="border-r border-dark-border p-2">30</div>
+                    <div
+                        class="border-r border-dark-border p-2 text-dark-text-secondary opacity-50">
+                        1</div>
+                    <div
+                        class="border-r border-dark-border p-2 text-dark-text-secondary opacity-50">
+                        2</div>
+                    <div
+                        class="border-r border-dark-border p-2 text-dark-text-secondary opacity-50">
+                        3</div>
+                    <div class="p-2 text-dark-text-secondary opacity-50">4</div>
+                </div>
+            </div>
+            <div class="lg:hidden p-4">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="text-center">
+                            <p class="text-xs text-dark-text-secondary">QUA</p>
+                            <p class="text-2xl font-bold">3</p>
+                        </div>
+                        <div
+                            class="flex-1 bg-blue-500 text-white p-3 rounded-lg">
+                            Peneira Aberta</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-center">
+                            <p class="text-xs text-dark-text-secondary">SEX</p>
+                            <p class="text-2xl font-bold">12</p>
+                        </div>
+                        <div
+                            class="flex-1 bg-brand-purple text-white p-3 rounded-lg">
+                            Avaliação Sub-20</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-center">
+                            <p class="text-xs text-dark-text-secondary">DOM</p>
+                            <p class="text-2xl font-bold">14</p>
+                        </div>
+                        <div
+                            class="flex-1 text-brand-purple-light p-3 rounded-lg">
+                            Hoje</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-center">
+                            <p class="text-xs text-dark-text-secondary">SEG</p>
+                            <p class="text-2xl font-bold">15</p>
+                        </div>
+                        <div
+                            class="flex-1 bg-green-500 text-white p-3 rounded-lg">
+                            Final do Campeonato</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark-bg mt-16 border-t border-dark-border">
+        <div
+            class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-dark-text-secondary text-sm">
+            <p>&copy; 2025 Passa a Bola. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
