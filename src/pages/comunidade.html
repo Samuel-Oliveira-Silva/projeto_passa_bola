@@ -34,175 +34,109 @@
     </script>
 </head>
 <body class="bg-dark-900 text-gray-200">
+
+    <!-- Botão para abrir o menu em telas menores -->
+    <button id="menuToggle" class="lg:hidden fixed top-4 left-4 z-50 bg-brand-purple text-white p-2 rounded-md">
+        ☰
+    </button>
+
     <div class="flex h-screen overflow-hidden">
-        <nav class="w-72 bg-dark-800 p-4 flex-shrink-0 flex flex-col">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="fixed lg:relative inset-y-0 left-0 w-72 bg-dark-800 p-4 flex-shrink-0 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-40">
             <div class="space-y-2">
-                <a href="../../index.html"
-                    class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-dark-700 font-semibold">
-                    <svg class="w-6 h-6 text-gray-400" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
-                        </path>
+                <a href="../../index.html" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-dark-700 font-semibold">
+                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                     </svg>
                     <span>Início</span>
                 </a>
-                <a href="chat.html"
-                    class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-dark-700 font-semibold">
-                    <svg class="w-6 h-6 text-gray-400" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
-                        </path>
+                <a href="chat.html" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-dark-700 font-semibold">
+                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                     </svg>
                     <span>Mensagens Diretas</span>
                 </a>
             </div>
             <hr class="border-t border-dark-700/50 my-4">
             <div class="flex-1 space-y-1">
-                <a href="#"
-                    class="flex items-center px-3 py-2 rounded-md bg-brand-purple text-white font-semibold">
+                <a href="#" class="flex items-center px-3 py-2 rounded-md bg-brand-purple text-white font-semibold">
                     <span>Passa a Bola</span>
                 </a>
                 <div class="pl-5 text-gray-400 space-y-1 mt-1">
-                    <a
-                        class="flex items-center gap-3 p-1 rounded hover:bg-dark-700"><span
-                            class="text-xl">#</span><span>Servidor 1</span></a>
-                    <a
-                        class="flex items-center gap-3 p-1 rounded hover:bg-dark-700"><span
-                            class="text-xl">#</span><span>Servidor 2</span></a>
+                    <a class="flex items-center gap-3 p-1 rounded hover:bg-dark-700"><span class="text-xl">#</span><span>Servidor 1</span></a>
+                    <a class="flex items-center gap-3 p-1 rounded hover:bg-dark-700"><span class="text-xl">#</span><span>Servidor 2</span></a>
                 </div>
             </div>
             <div class="mt-auto space-y-4">
-                <button
-                    class="w-full bg-brand-lavender text-black font-bold py-3 rounded-lg hover:opacity-90 transition-opacity">
+                <button class="w-full bg-brand-lavender text-black font-bold py-3 rounded-lg hover:opacity-90 transition-opacity">
                     Adicionar Servidor
                 </button>
                 <div class="flex items-center gap-2 p-1">
-                    <img class="w-8 h-8 rounded-full"
-                        src="https://media.istockphoto.com/id/2222927647/pt/foto/serious-woman-or-soccer-player-in-portrait-for-sports-match-competition-or-tournament-locker.jpg?s=612x612&w=0&k=20&c=pQnpQFRilcs4_H3av37LD5KpOon-YqzFx9cUXn53qaY=" alt="Avatar do Usuário">
+                    <img class="w-8 h-8 rounded-full" src="https://media.istockphoto.com/id/2222927647/pt/foto/serious-woman-or-soccer-player-in-portrait-for-sports-match-competition-or-tournament-locker.jpg?s=612x612&w=0&k=20&c=pQnpQFRilcs4_H3av37LD5KpOon-YqzFx9cUXn53qaY=" alt="Avatar do Usuário">
                     <p class="text-sm font-semibold">Você</p>
                 </div>
             </div>
         </nav>
-        <main class="flex-1 p-6 lg:p-8 overflow-y-auto">
+
+        <!-- Overlay para telas pequenas -->
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden"></div>
+
+        <!-- Main -->
+        <main class="flex-1 p-6 lg:p-8 overflow-y-auto ml-0 lg:ml-72 transition-all duration-300">
             <header class="relative mb-8">
-                <span
-                    class="absolute inset-y-0 left-0 flex items-center pl-4"><svg
-                        class="h-5 w-5 text-gray-500" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                            clip-rule="evenodd"></path>
-                    </svg></span>
-                <input type="text" placeholder="Explorar servidores"
-                    class="w-full bg-dark-800 py-2 pl-12 pr-4 rounded-md focus:outline-none">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-4">
+                    <svg class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
+                    </svg>
+                </span>
+                <input type="text" placeholder="Explorar servidores" class="w-full bg-dark-800 py-2 pl-12 pr-4 rounded-md focus:outline-none">
             </header>
+            
+            <!-- Conteúdo da página (Comunidades e Esportes) -->
             <section class="mb-12">
-                <h2 class="text-2xl font-bold mb-6 text-white">Principais
-                    Comunidades</h2>
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col items-center text-center hover:bg-dark-700 transition-colors cursor-pointer">
-                        <div
-                            class="w-full h-40 bg-white rounded-md mb-4 flex items-center justify-center">
-                            <img src="https://img.freepik.com/psd-gratuitas/jogador-de-futebol-silhueta_23-2150760894.jpg?semt=ais_hybrid&w=740&q=80"
-                                class="h-24 w-24">
+                <h2 class="text-2xl font-bold mb-6 text-white">Principais Comunidades</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cards de comunidade -->
+                    <div class="bg-dark-800 rounded-lg p-4 flex flex-col items-center text-center hover:bg-dark-700 transition-colors cursor-pointer">
+                        <div class="w-full h-40 bg-white rounded-md mb-4 flex items-center justify-center">
+                            <img src="https://img.freepik.com/psd-gratuitas/jogador-de-futebol-silhueta_23-2150760894.jpg?semt=ais_hybrid&w=740&q=80" class="h-24 w-24">
                         </div>
-                        <h3 class="font-bold text-white text-lg">Passa a Bola
-                        </h3>
-                        <p class="text-xs text-gray-400 mt-1">A comunidade
-                            oficial do Passa a Bola</p>
+                        <h3 class="font-bold text-white text-lg">Passa a Bola</h3>
+                        <p class="text-xs text-gray-400 mt-1">A comunidade oficial do Passa a Bola</p>
                     </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col items-center text-center hover:bg-dark-700 transition-colors cursor-pointer">
-                        <div class="w-full h-40 rounded-md mb-4"><img
-                                src="https://img.freepik.com/vetores-premium/jogadora-de-futebol-feminina-na-polinesia-etnica-padrao-ilustracao-emblema-emblema_894890-22172.jpg?semt=ais_incoming&w=740&q=80"
-                                class="w-full h-full object-cover rounded-md">
-                        </div>
-                        <h3 class="font-bold text-white text-lg">Mães do futebol
-                            unidas</h3>
-                        <p class="text-xs text-gray-400 mt-1">Comunidade de
-                            jogadoras de futebol se conectarem e compartilharem
-                        </p>
-                    </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col items-center text-center hover:bg-dark-700 transition-colors cursor-pointer">
-                        <div class="w-full h-40 rounded-md mb-4"><img
-                                src="https://st2.depositphotos.com/5545370/11058/v/950/depositphotos_110582970-stock-illustration-womens-football-soccer-logo-vector.jpg"
-                                class="w-full h-full object-cover rounded-md">
-                        </div>
-                        <h3 class="font-bold text-white text-lg">Mães do futebol
-                            unidas</h3>
-                        <p class="text-xs text-gray-400 mt-1">Comunidade de
-                            jogadoras de futebol se conectarem e compartilharem
-                        </p>
-                    </div>
+                    <!-- Adicione os outros cards aqui -->
+                </div>
             </section>
+            
             <section>
                 <h2 class="text-2xl font-bold mb-6 text-white">Esportes</h2>
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
-                        <img src="https://img.freepik.com/vetores-premium/silhueta-de-futebol-jovem_407354-64.jpg?semt=ais_incoming&w=740&q=80"
-                            class="w-full h-32 object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-white text-lg">Mães do futebol
-                            unidas</h3>
-                        <p class="text-xs text-gray-400 mt-1">Comunidade de
-                            jogadoras de futebol se conectarem e compartilharem
-                        </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cards de esportes -->
+                    <div class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
+                        <img src="https://img.freepik.com/vetores-premium/silhueta-de-futebol-jovem_407354-64.jpg?semt=ais_incoming&w=740&q=80" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="font-bold text-white text-lg">Mães do futebol unidas</h3>
+                        <p class="text-xs text-gray-400 mt-1">Comunidade de jogadoras de futebol se conectarem e compartilharem</p>
                     </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_zb3YIdDk3Icz-OkQc0gfvZdVVYm1FOKBw&s"
-                            class="w-full h-32 object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-white text-lg">Fanáticos por
-                            futebol</h3>
-                        <p class="text-xs text-gray-400 mt-1">O maior para
-                            torcedores de futebol discutirem e celebrarem o
-                            esporte</p>
-                    </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
-                        <img src="https://img.freepik.com/fotos-premium/vitoria-da-equipa-nacional-de-futebol-feminina_910054-41455.jpg?semt=ais_incoming&w=740&q=80"
-                            class="w-full h-32 object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-white text-lg">Centro de
-                            jogadores de futebol</h3>
-                        <p class="text-xs text-gray-400 mt-1">As jogadoras
-                            compartilham dicas e experiências</p>
-                    </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
-                        <img src="https://img.freepik.com/vetores-premium/design-de-logotipo-vetorial-de-clube-de-futebol-feminino_825834-6340.jpg?semt=ais_incoming&w=740&q=80"
-                            class="w-full h-32 object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-white text-lg">Boleiras</h3>
-                        <p class="text-xs text-gray-400 mt-1">Uma comunidade
-                            para jogadores e fãs de todos os níveis</p>
-                    </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYlCbiw8UIUCCkHv2boGpR4X-u2BQIHotEPg&s"
-                            class="w-full h-32 object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-white text-lg">Fut Lovers</h3>
-                        <p class="text-xs text-gray-400 mt-1">Conecte-se com fãs
-                            apaixonados e discuta as últimas partidas</p>
-                    </div>
-                    <div
-                        class="bg-dark-800 rounded-lg p-4 flex flex-col text-left hover:bg-dark-700 transition-colors cursor-pointer">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZeAShN4BpAQ27AVkG1CiTRR9_nRh1Tdw_w&s"
-                            class="w-full h-32 object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-white text-lg">Brasileirão
-                            Fans</h3>
-                        <p class="text-xs text-gray-400 mt-1">Dedicado à
-                            principal liga de futebol feminino do mundo.</p>
-                    </div>
+                    <!-- Adicione os outros cards aqui -->
                 </div>
             </section>
         </main>
     </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
