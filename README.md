@@ -24,26 +24,18 @@ Você pode acessar o projeto publicado pelo GitHub Pages no link abaixo:
 ## 🛠️ Tecnologias Utilizadas
 - **HTML5**
 - **TailwindCSS**
-- **JavaScript**
-- **GitHub Pages** (deploy)
+- **GitHub Pages** 
 
 ---
 
-## 📂 Estrutura do Projeto
-projeto_passa_bola/
-│── src/
-│ ├── pages/
-│ │ ├── comunidade.html # Página principal da comunidade
-│ │ ├── mensagens_diretas.html # Mensagens privadas
-│ │ ├── historias.html # Histórias e relatos dos jogadores
-│ │ └── divulga_fut.html # Divulgação de partidas
-│ ├── assets/ # Imagens e ícones
-│ └── css/ # Estilos adicionais (se houver)
-│
-│── README.md # Documentação do projeto
-
-yaml
-Copiar código
+## 🎯 Objetivo da Sprint 3
+A Sprint 3 teve como objetivo:
+- Melhorar a **responsividade** das páginas para diferentes dispositivos.  
+- Implementar navegação entre as seções da comunidade.  
+- Criar **interface de mensagens diretas**, simulando troca de mensagens.  
+- Disponibilizar conteúdo de **histórias e relatos** da comunidade.  
+- Organizar um ambiente digital inspirado em redes sociais, mas voltado ao **futebol amador**.  
+- Criar uma área dedicada à **Copa Passa a Bola** e **peneiras para jogadoras amadoras no Brasil**, promovendo oportunidades e visibilidade no esporte.  
 
 ---
 
@@ -56,6 +48,9 @@ Espaço para que jogadores e jogadoras compartilhem suas experiências no futebo
 
 ### 🌍 Comunidade
 Servidores e canais temáticos para interação entre usuários.
+
+### 🏆 Copa Passa a Bola
+Seção especial para acompanhar classificações, jogos e oportunidades em **peneiras femininas**.
 
 ---
 
